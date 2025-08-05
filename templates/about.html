@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | EVALPRO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      background: #f0f2f5;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffa502;
+    }
+
+    .hero {
+      background: url('https://media.istockphoto.com/id/1460755337/photo/white-color-theme-modern-style-office-with-exposed-concrete-floor-and-a-lot-of-plant-3d.jpg?s=612x612&w=0&k=20&c=PX1TFWVrLL34jgkmFREmxrzy3M4rqhBk4NMrHFOTmo8=') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 160px 60px 60px;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .hero-content .btn {
+      background: #ffa502;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .features {
+      background: #fff;
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .features p {
+      font-size: 16px;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background: #2f3542;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" alt="Logo">
+    EVALPRO
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/predict">Predict</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Employee Performance Evaluation</h1>
+    <p>
+      EVALPRO offers intelligent performance prediction by comparing team productivity using Machine Learning.
+      Gain actionable insights on employee efficiency with visual analytics, enabling better decisions for management.
+    </p>
+    <a href="/predict" class="btn">Try Prediction</a>
+  </div>
+</section>
+
+<section class="features">
+  <h2>Features</h2>
+  <p>
+    Our platform uses a Random Forest Classifier to categorize productivity as Low, Average, or High based on various parameters such as SMV, Idle Time, Incentives, and more.
+  </p>
+</section>
+
+<footer>
+  <p><strong>Contact Us:</strong></p>
+  <p>Email: support@evalpro.ai</p>
+  <p>Phone: +91-9876543210</p>
+  <p>&copy; 2025 EVALPRO - All rights reserved.</p>
+</footer>
+
+</body>
+</html>

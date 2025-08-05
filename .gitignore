@@ -1,0 +1,22 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Model files
+*.pkl
+
+# System files
+.DS_Store
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# VS Code settings (optional)
+.vscode/

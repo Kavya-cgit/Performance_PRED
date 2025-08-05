@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | EVALPRO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      background: #f0f2f5;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffa502;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1602407294553-6c1862dfb929?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 160px 60px 60px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .hero-content h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .hero-content .btn {
+      background: #ffa502;
+      border: none;
+      padding: 12px 24px;
+      color: black;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .features {
+      background: #fff;
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 30px;
+      width: 280px;
+      margin: 15px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .card img {
+      height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2f3542;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #2f3542;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" alt="Logo">
+    EVALPRO
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/predict">Predict</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to EVALPRO</h1>
+    <p>Your intelligent assistant for predicting employee performance using machine learning. Make smarter workforce decisions in seconds.</p>
+    <a href="/predict" class="btn">Start Prediction</a>
+  </div>
+</section>
+
+<section class="features">
+  <h2>Why Use EVALPRO?</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/bar-chart.png" alt="Accuracy">
+      <h3>High Accuracy</h3>
+      <p>Uses a Random Forest Classifier trained on real-world data to predict with precision.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/brain.png" alt="Smart AI">
+      <h3>Smart AI</h3>
+      <p>Automatically adapts to input data using powerful scaling and encoding techniques.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/ios-filled/50/settings.png" alt="Deployment Ready">
+      <h3>Deployment Ready</h3>
+      <p>Built with Flask for fast, easy integration into any workflow or business use case.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Contact Us:</strong></p>
+  <p>Email: support@evalpro.ai</p>
+  <p>Phone: +91-9876543210</p>
+  <p>&copy; 2025 EVALPRO - All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("/static/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.7);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #ffa502;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      margin-top: 120px;
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      
+    }
+
+    .result {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 10px 20px;
+      background-color: #ffa502;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      background-color: #ff7f00;
+    }
+    body, html {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjz7OZJaFucWd-RO3_GwXUIFIC73zd1sE8g&s');
+      background-position: center;
+      background-repeat: no-repeat; 
+      background-size: cover;
+      position: relative;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" alt="Logo">
+      EVALPRO
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/predict">Predict</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>🎯 Prediction Result</h1>
+    <p class="result">The productivity of the employee is: <strong>{{ prediction }}</strong></p>
+    <a href="/predict" class="button">Try Another Prediction</a>
+  </div>
+
+</body>
+</html>

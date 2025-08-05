@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predict Productivity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/039/053/949/small/ai-generated-modern-interior-design-office-hall-with-conference-table-wooden-floor-and-dark-wall-background-photo.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+      z-index: 0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffa502;
+    }
+
+    .container {
+      position: relative;
+      max-width: 600px;
+      margin: 7rem auto 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      color: #003366;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0055aa;
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" alt="Logo">
+      EVALPRO
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/predict">Predict</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Predict Worker Productivity</h1>
+    <form action="/submit" method="post">
+      <label>Team:</label>
+      <input type="number" name="team" required>
+
+      <label>Targeted Productivity:</label>
+      <input type="number" step="0.01" name="targeted_productivity" required>
+
+      <label>SMV:</label>
+      <input type="number" step="0.01" name="smv" required>
+
+      <label>WIP:</label>
+      <input type="number" name="wip" required>
+
+      <label>Over Time:</label>
+      <input type="number" name="over_time" required>
+
+      <label>Incentive:</label>
+      <input type="number" name="incentive" required>
+
+      <label>Idle Time:</label>
+      <input type="number" name="idle_time" required>
+
+      <label>Idle Men:</label>
+      <input type="number" name="idle_men" required>
+
+      <label>No. of Style Change:</label>
+      <input type="number" name="no_of_style_change" required>
+
+      <label>No. of Workers:</label>
+      <input type="number" name="no_of_workers" required>
+
+      <button type="submit">Predict Productivity</button>
+    </form>
+  </div>
+</body>
+</html>
